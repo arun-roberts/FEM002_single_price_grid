@@ -1,0 +1,135 @@
+body {
+    background-color: hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+main {
+    display: grid;
+    grid-auto-rows: minmax(245px, auto);
+    width: 86.1%;
+    box-shadow: 0 0 8px 5px hsl(218, 22%, 67%, 0.1);
+    margin: 9.75vh auto;
+    padding: 0;
+}
+
+div {
+    align-content: space-around;
+    padding: 3.46vh 6.5vw;
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+                            JOIN SECTION
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+.join {
+    border-radius: 0.5em 0.5em 0 0;
+    background-color: white;
+}
+
+h1 {
+    font-size: 5.17vw;
+    color: hsl(179, 62%, 43%);
+    margin: 0.48vh 0;
+}
+
+h4 {
+    font-size: 3.96vw;
+    line-height: 2.7vh;
+    color: hsl(71, 73%, 54%);
+    margin: 3.3vh 0 2.7vh 0 ;
+}
+
+h4 + p {
+    font-size: 3.62vw;
+    line-height: 3.45vh;
+    color: hsl(218, 22%, 67%);
+    margin: 0;
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+                            SUBSCRIBE SECTION
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+.subscribe {
+    background-color: hsl(179, 62%, 43%);
+}
+
+.subscribe h2 {
+    font-size: 4.65vw;
+    margin-top: 0;
+}   
+
+section {
+    display: flex;
+    padding: 0;
+}
+
+h3 {
+    font-size: 8.1vw;
+    margin: 0;
+}
+
+section p {
+    align-self: center;
+    font-size: 4.2vw;
+    color: hsl(179, 62%, 49%);
+    padding: 0;
+    margin: 0 3.7vw;
+}
+
+.subscribe p {
+    font-size: 4.15vw;
+}
+
+button {
+    width: 100%;
+    height: 6.3vh; 
+    border: none;
+    border-radius: 0.3em;
+    background-color: hsl(71, 73%, 54%);
+    font-family: inherit;
+    font-size: 4.4vw;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+                            WHY SECTION
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+.why {
+    border-radius: 0 0 0.5em 0.5em;
+    background-color: hsl(179, 62%, 47%);
+}
+
+.why h2 {
+    font-size: 4.6vw;
+    margin-top: 0;
+}
+
+ul {
+    font-size: 3.625vw;
+    line-height: 1.5rem;
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    color: hsl(204, 43%, 93%);
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+                            ATTRIBUTION SECTION
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
