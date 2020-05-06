@@ -7,37 +7,52 @@ body {
     margin: 0;
 }
 
-main {
-    display: grid;
-    grid-auto-rows: minmax(150px, auto);
-    width: 86.1%;
-    box-shadow: 0 0 8px 5px hsl(218, 22%, 67%, 0.1);
-    margin: 9.75vh auto;
-    padding: 0;
-}
+    main {
+        display: grid;
+        grid-auto-rows: minmax(150px, auto);
+        width: 86.1%;
+        border-radius: 0.5em;
+        box-shadow: 0 0.5rem 0.5rem 0.2rem rgba(152, 166, 189, 0.096), 0 0.2rem 0.5rem 0.3rem rgba(152, 166, 189, 0.151);
+        margin: 9.75vh auto;
+        padding: 0;
+    }
 
-div {
-    align-content: space-around;
-    padding: 3.46vh 6.5vw;
-}
+        div {
+            align-content: space-around;
+            padding: 3.46vh 6.5vw;
+        }
 
-@media (min-width: 700px) {
+    .attribution { 
+        font-size: 11px; 
+        text-align: center; 
+    }
+
+    .attribution a { 
+        color: hsl(218, 22%, 67%); 
+    }
+
+@media (min-width: 500px) {     /* DESKTOP */
     main {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-auto-rows: minmax(10.5rem, auto);
         width: 39.68rem;
-        box-shadow: 0 0 8px 5px hsl(218, 22%, 67%, 0.1);
         margin: 10.2rem auto;
         padding: 0;
     }
     
-    .join {
-        padding: 2rem 2.5rem 0 2.5rem;
-    }
+        .join {
+            padding: 2rem 2.5rem 0 2.5rem;
+        }
 
-    .subscribe, .why {
-        padding: 2.54rem 2.5rem 1.6rem 2.5rem;
+        .subscribe, .why {
+            padding: 2.54rem 2.5rem 1.6rem 2.5rem;
+        }
+
+    footer {
+        position: absolute;
+        top: 120%;
+        left: 40%;
     }
 }
 
@@ -50,27 +65,28 @@ div {
     background-color: white;
 }
 
-h1 {
-    font-size: 5.17vw;
-    color: hsl(179, 62%, 43%);
-    margin: 0.48vh 0;
-}
+    h1 {
+        font-size: 5.17vw;
+        color: hsl(179, 62%, 43%);
+        margin: 0.48vh 0;
+    }
 
-h4 {
-    font-size: 3.96vw;
-    line-height: 2.7vh;
-    color: hsl(71, 73%, 54%);
-    margin: 3.3vh 0 2.7vh 0 ;
-}
+    h4 {
+        font-size: 3.96vw;
+        line-height: 2.7vh;
+        color: hsl(71, 73%, 54%);
+        margin: 3.3vh 0 2.7vh 0 ;
+    }
 
-h4 + p {
-    font-size: 3.62vw;
-    line-height: 3.45vh;
-    color: hsl(218, 22%, 67%);
-    margin: 0;
-}
+    h4 + p {
+        font-size: 3.62vw;
+        line-height: 3.45vh;
+        color: hsl(218, 22%, 67%);
+        margin: 0;
+    }
 
-@media (min-width: 700px) {
+@media (min-width: 500px) {     /* DESKTOP */
+
     .join {
         grid-column: 1 / 5;
         grid-row: 1;
@@ -79,21 +95,21 @@ h4 + p {
         background-color: white;
     }
 
-    h1 {
-        font-size: 1.47rem;
-        margin: 0.48rem 0;
-    }
-    
-    h4 {
-        font-size: 1.1rem;
-        line-height: 1rem;
-        margin: 1.67rem 0 0.87rem 0 ;
-    }
-    
-    h4 + p {
-        font-size: 0.974em;
-        line-height: 1.65rem;
-    }
+        h1 {
+            font-size: 1.47rem;
+            margin: 0.48rem 0;
+        }
+        
+        h4 {
+            font-size: 1.1rem;
+            line-height: 1rem;
+            margin: 1.67rem 0 0.87rem 0 ;
+        }
+        
+        h4 + p {
+            font-size: 0.974em;
+            line-height: 1.65rem;
+        }
 }
 
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
@@ -104,51 +120,66 @@ h4 + p {
     background-color: hsl(179, 62%, 43%);
 }
 
-.subscribe h2 {
-    font-size: 4.65vw;
-    margin-top: 0;
-}   
+    .subscribe h2 {
+        font-size: 4.65vw;
+        margin-top: 0;
+    }   
 
-section {
-    display: flex;
-    padding: 0;
-    padding-top: 0.4vh;
-}
+    section {
+        display: flex;
+        padding: 0;
+        padding-top: 0.4vh;
+    }
 
-h3 {
-    font-size: 8.7vw;
-    font-weight: 400;
-    margin: 0;
-}
+        h3 {
+            font-size: 8.7vw;
+            font-weight: 400;
+            margin: 0;
+        }
 
-section > p {
-    align-self: center;
-    font-size: 4.2vw;
-    color: hsl(179, 62%, 49%);
-    padding: 0;
-    margin: 0 3.7vw;
-}
+        section > p {
+            align-self: center;
+            font-size: 4.2vw;
+            color: hsl(179, 62%, 49%);
+            padding: 0;
+            margin: 0 3.7vw;
+        }
 
-section + p {
-    font-size: 4.15vw;
-    margin-top: 0.9vh;
-    margin-bottom: 4vh;
-}
+    section + p {
+        font-size: 4.15vw;
+        margin-top: 0.9vh;
+        margin-bottom: 4vh;
+    }
 
-button {
-    width: 100%;
-    height: 6.3vh; 
-    border: none;
-    border-radius: 0.3em;
-    background-color: hsl(71, 73%, 54%);
-    font-family: inherit;
-    font-size: 4.4vw;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-}
+    button {
+        width: 100%;
+        height: 6.3vh; 
+        border: none;
+        border-radius: 0.3em;
+        background-color: hsl(71, 73%, 54%);
+        box-shadow: 0 0.3em 0.5em 0.1em hsla(204, 4%, 27%, 0.1), 0 0.1em 0.5em 0.2em hsla(203, 6%, 28%, 0.1);
+        cursor: pointer;
+        font-family: inherit;
+        font-size: 4.4vw;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+    }
 
-@media (min-width: 700px) {
+        button:hover {
+            background-color: hsl(71, 97%, 53%);;
+        }
+
+        button:focus { 
+            outline: none; 
+        }
+
+        button:active {
+            box-shadow: none;
+            transform: translateY(0.1em);
+        }
+
+@media (min-width: 500px) {     /* DESKTOP */
     .subscribe {
         height: 12rem;
         grid-column: 1 / 3;
@@ -156,37 +187,37 @@ button {
         border-radius: 0 0 0 0.5em;
     }
 
-    .subscribe h2 {
-        font-size: 1.1rem;
-    }   
-    
-    section {
-        padding-top: 0.15rem;
-    }
-    
-    h3 {
-        font-size: 2.1rem;
-        font-weight: 400;
-        margin: 0;
-    }
-    
-    section > p {
-        align-self: center;
-        font-size: 1rem;
-        padding: 0;
-        margin: 0 0.8rem;
-    }
-    
-    section + p {
-        font-size: 0.974rem;
-        margin-top: 0.45rem;
-        margin-bottom: 1.85rem;
-    }
-    
-    button {
-        height: 3rem; 
-        font-size: 1.01rem;
-    }
+        .subscribe h2 {
+            font-size: 1.1rem;
+        }   
+        
+        section {
+            padding-top: 0.15rem;
+        }
+        
+            h3 {
+                font-size: 2.1rem;
+                font-weight: 400;
+                margin: 0;
+            }
+            
+            section > p {
+                align-self: center;
+                font-size: 1rem;
+                padding: 0;
+                margin: 0 0.8rem;
+            }
+        
+        section + p {
+            font-size: 0.974rem;
+            margin-top: 0.45rem;
+            margin-bottom: 1.85rem;
+        }
+        
+        button {
+            height: 3rem; 
+            font-size: 1.01rem;
+        }
 }
 
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
@@ -198,24 +229,24 @@ button {
     background-color: hsl(179, 62%, 47%);
 }
 
-.why h2 {
-    font-size: 4.6vw;
-    margin-top: 0;
-}
+    .why h2 {
+        font-size: 4.6vw;
+        margin-top: 0;
+    }
 
-ul {
-    font-size: 3.625vw;
-    line-height: 2.75vh;
-    list-style: none;
-    padding: 0;
-    margin-bottom: 0;
-}
+    ul {
+        font-size: 3.625vw;
+        line-height: 2.75vh;
+        list-style: none;
+        padding: 0;
+        margin-bottom: 0;
+    }
 
-li {
-    color: hsl(204, 43%, 93%);
-}
+        li {
+            color: hsl(204, 43%, 93%);
+        }
 
-@media (min-width: 700px) {
+@media (min-width: 500px) {     /* DESKTOP */
     .why {
         grid-column: 3 / 5;
         grid-row: 2;
@@ -236,23 +267,4 @@ li {
         padding: 0;
         margin-bottom: 0;
     }
-}
-
-/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-                            ATTRIBUTION SECTION
-＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
-
-footer {
-    position: absolute;
-    bottom: 0.5rem;
-    left: 50%;
-}
-
-.attribution { 
-    font-size: 11px; 
-    text-align: center; 
-}
-
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
 }
